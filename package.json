@@ -20,6 +20,7 @@
   "homepage": "https://github.com/TranquilTort/RCM-HCD-Christopher-Regan#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "node-sass": "^8.0.0"
   }
 }

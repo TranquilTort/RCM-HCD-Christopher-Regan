@@ -1,0 +1,34 @@
+body {
+    margin: 0px;
+}
+#root {
+    height:100vh;
+    width:100vw;
+
+}
+.page-container {
+    width: 100%;
+    height: 100%;
+    background-color: red;;
+}
+
+.header-container {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+}
+
+.list-container {
+    background-color: green;
+    height: 100%;
+    width: 200px;
+}
+.list-item-container {
+ font-size: medium;
+}
+
+.details-container {
+    background-color: purple;
+    width: 100%;
+    height:100%;
+}

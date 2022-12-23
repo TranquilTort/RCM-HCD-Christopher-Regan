@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './styles.scss';
+import ListContainer from './Components/ListContainer'
 
 function App() {
   const [breweries, setBreweries] = useState(null)
@@ -11,25 +12,24 @@ function App() {
       .then((response) => response.json())
       .then((data) => setBreweries(data));
   }, []);
-  console.log(breweries)
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  if(breweries == null){
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Loading Brewery Data Please Wait...
+          </p>
+         
+        </header>
+      </div>
+    );
+  }
+
+  
+  return(
+    <ListContainer breweries={breweries} />
+  )
 }
 
 export default App;
