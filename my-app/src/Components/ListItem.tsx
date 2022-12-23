@@ -20,7 +20,7 @@ function ListItem(
      return(
         <div style={index==selectedBrewery ? {backgroundColor:"#cfebdf7b"}:{}} onClick={()=>{setSelectedBrewery(index)}}className='list-item-container'>
             <div className='li-title'>
-                {website_url?<a href={website_url}>{name}</a>: name}
+                {website_url?<a target="_blank" href={website_url}>{name}</a>: name}
             </div >
             <div className='li-type'>
                 {brewery_type}

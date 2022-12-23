@@ -13,19 +13,9 @@ function App() {
   }, []);
   if(breweries == null){
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Loading Brewery Data Please Wait...
-          </p>
-         
-        </header>
-      </div>
+      <></>   
     );
   }
-
-  
   return(
     <ListContainer breweries={breweries} />
   )

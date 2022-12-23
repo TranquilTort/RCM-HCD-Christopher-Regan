@@ -20,6 +20,8 @@ html {
     background-color: #9BC4CB;
     width: 100%;
     height: 100px;
+    display: flex;
+    
 }
 
 .list-container {
@@ -74,7 +76,7 @@ html {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
     
 .details-header {
@@ -91,4 +93,19 @@ html {
 #map {
     width: 100%;
     height: 100%;
+}
+
+.rsm-logo {
+    height: 80px; 
+    margin: 5px 5px 5px 15px; 
+    object-fit: cover;
+    width: 15%;
+}
+.header-title {
+    display: flex;
+    width: 85%;
+    font-size: 25px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
 }
