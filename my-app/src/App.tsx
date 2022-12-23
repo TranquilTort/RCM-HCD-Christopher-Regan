@@ -6,7 +6,6 @@ import ListContainer from './Components/ListContainer'
 
 function App() {
   const [breweries, setBreweries] = useState(null)
-
   useEffect(()=> {
     fetch("/api")
       .then((response) => response.json())
