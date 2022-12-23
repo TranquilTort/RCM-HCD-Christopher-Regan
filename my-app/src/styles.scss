@@ -9,7 +9,8 @@ body {
 .page-container {
     width: 100%;
     height: 100%;
-    background-color: red;;
+    background-color: red;
+    padding:10px;
 }
 
 .header-container {
@@ -20,15 +21,22 @@ body {
 
 .list-container {
     background-color: green;
-    height: 100%;
-    width: 200px;
+    height: calc(90% - 100px);
+    width: 400px;
+    overflow-y: scroll;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
 .list-item-container {
  font-size: medium;
+ border: 2px solid black;
+ padding: 5px;
 }
 
 .details-container {
     background-color: purple;
-    width: 100%;
-    height:100%;
+    width: fill;
+    height: calc(90% - 100px);
 }
