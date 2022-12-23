@@ -18,12 +18,15 @@ export interface Brewery {
 function ListItem(
     {name, index, brewery_type, city, state, street, postal_code, website_url,selectedBrewery, setSelectedBrewery }:Brewery) {
      return(
-        <div onClick={()=>{setSelectedBrewery(index)}}className='list-item-container'>
+        <div style={index==selectedBrewery ? {backgroundColor:"#cfebdf7b"}:{}} onClick={()=>{setSelectedBrewery(index)}}className='list-item-container'>
             <div className='li-title'>
-                {name}
+                {website_url?<a href={website_url}>{name}</a>: name}
             </div >
             <div className='li-type'>
                 {brewery_type}
+            </div>
+            <div>
+                {`${street} ${city}, ${state} ${postal_code}  `}
             </div>
         </div>
      )

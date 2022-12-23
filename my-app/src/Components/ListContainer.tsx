@@ -19,8 +19,8 @@ function ListContainer({breweries}: ListContainerProps) {
             <div className='header-container'>
 
             </div>
-            <div style={{width:"100%", height:"100%", display:"flex"}}>
-                <div className="list-container">
+            <div className='list-details-container'>
+                <div className="list-container" id="scrollable">
                     {breweriesList}
                 </div>
                 <div className='details-container'>
