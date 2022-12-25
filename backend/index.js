@@ -23,10 +23,15 @@ axios.get('https://api.openbrewerydb.org/breweries')
         console.log(error)
     });
 
+app.use(express.static(path.resolve(__dirname, '../my-app/build')))
 
 app.get("/api", (req, res) => {
     res.json(brewList);
-  });
+});
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../my-app/build', 'index.html'));
+});
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
