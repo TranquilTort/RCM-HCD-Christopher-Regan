@@ -21,9 +21,8 @@ function ListContainer({breweries}: ListContainerProps) {
                 <div className="list-container" id="scrollable">
                     {breweriesList}
                 </div>
-                <div className='details-container'>
-                    <BreweryDetails {...breweries[selectedBrewery]}/>  
-                </div>
+                <BreweryDetails {...breweries[selectedBrewery]}/>  
+
             </div>
         </div>
     )

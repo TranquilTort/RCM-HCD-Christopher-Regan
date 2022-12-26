@@ -8,7 +8,12 @@ function BreweryDetails({name,brewery_type,city,state,street,postal_code, latitu
     return(
         <div className='details-container'>
             <div className='details-header'>
-                {name}
+                <div style={{ textAlign:"center"}}>
+                    {name}
+                </div>
+                <div style={{fontWeight:"normal", textAlign:"center"}}>
+                    {`${street} ${city}, ${state} ${postal_code}  `}
+                </div>
             </div>
             <div className='map-container'>
                 <GoogleMap key={latitude} lat={Number(latitude)} lng={Number(longitude)} />
