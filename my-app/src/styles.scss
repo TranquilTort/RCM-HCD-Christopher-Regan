@@ -22,12 +22,11 @@ html {
     width: 100%;
     height: 100px;
     display: flex;
-    
+
 }
 
 .list-container {
-    
-    height: calc(100% - 100px);
+
     width: 400px;
     margin-left: 15px;
     border-radius: 5px;
@@ -36,20 +35,20 @@ html {
     overflow-y: scroll;
 }
 .list-details-container {
-    height: calc(100% - 100px);
+    height: calc(100% - 120px);
     display: flex;
 }
 .list-container::-webkit-scrollbar-track
 {
-    
+
     margin-left: 2px;
 	-webkit-box-shadow: inset 0 0 6px rgba(237, 216, 216, 0.6);
 	border-radius: 10px;
-    
+
 }
 
 .list-container::-webkit-scrollbar
-{   
+{
     // border:5px solid red;
 
 	width: 19px;
@@ -57,7 +56,7 @@ html {
 }
 
 .list-container::-webkit-scrollbar-thumb
-{   
+{
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
 	background-color: #9BC4CB;
@@ -96,11 +95,11 @@ html {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     padding: 20px;
 
 }
-    
+
 .details-header {
     font-size: 24px;
     font-weight: bold;
@@ -110,24 +109,25 @@ html {
     justify-content: center;
     align-items: center;
 }
-    
+
 .map-container {
     width: 100%;
-    height: 300px;
+    height: fill;
     display: flex;
     justify-content: center;
 }
-    
+
 #map {
-    width: 100%;
+
+    width: 70%;
     height: 100%;
 }
 
 .rsm-logo {
-    height: 80px; 
-    margin: 5px 5px 5px 15px; 
-    object-fit: cover;
-    width: 15%;
+    height: 80px;
+    margin: 5px 5px 5px 15px;
+    object-fit:cover;
+    width: 120px;
 }
 .header-title {
     display: flex;

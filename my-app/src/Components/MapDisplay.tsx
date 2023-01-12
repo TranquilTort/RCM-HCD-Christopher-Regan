@@ -11,7 +11,7 @@ interface Props {
 
 class GoogleMap extends React.Component<Props> {
   map: any;
-  
+
   componentDidMount() {
     console.log(this.props.lat);
     console.log(this.props.lng);
@@ -31,7 +31,7 @@ class GoogleMap extends React.Component<Props> {
   }
 
   render() {
-    return <div id="map" style={{ width: '400px', height: '400px' }} />;
+    return <div id="map"/>;
   }
 }
 
